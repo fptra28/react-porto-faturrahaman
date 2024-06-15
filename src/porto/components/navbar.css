@@ -1,0 +1,21 @@
+/* NavbarHome.css */
+.nav-link:hover {
+    background-color: #991b1b;
+    color: #f9fafb;
+ }
+  
+ /* navbar.css */
+.dropdown-menu {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hide {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  

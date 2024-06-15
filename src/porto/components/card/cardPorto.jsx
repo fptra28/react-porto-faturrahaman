@@ -1,0 +1,18 @@
+import React from "react";
+import { Link } from "react-router-dom"; // Jika menggunakan React Router
+
+const CardPorto = ({ title, image, url }) => {
+  return (
+    <div className="w-full md:w-[484px] h-[348px] md:h-[348px] rounded-[10px] shadow-lg flex flex-col justify-center items-center overflow-hidden">
+      <div className="w-full h-full flex flex-col justify-center items-center">
+        <img src={image} className="w-full h-full object-cover" alt={title} />
+      </div>
+      <div className="w-full px-5 py-5 bg-red-900 flex justify-between items-center transition duration-300 ease-in-out hover:bg-red-950">
+        <div className="text-white text-xl font-bold">{title}</div>
+        <div className="text-red-200 text-base font-normal">View More...</div>
+      </div>
+    </div>
+  );
+};
+
+export default CardPorto;
