@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import CardPorto from "./card/cardPorto";
+import ButtonViewMore from "./button/button";
+import TitleSection from "./title/title";
 
 const Porto = () => {
   const [portfolio] = useState([
@@ -29,15 +31,9 @@ const Porto = () => {
 
   return (
     <div className="w-full bg-red-800 py-16 px-7 sm:px-12 lg:px-14 xl:px-52 flex flex-col gap-10">
-      <div
-        id="title"
-        className="flex flex-col justify-center items-center gap-7"
-      >
-        <div className="text-4xl text-neutral-50 font-semibold">
-          My Portfolio
-        </div>
-        <div className="w-[180px] h-[7px] bg-red-300 rounded-full"></div>
-      </div>
+      <TitleSection textColor="text-white" lineColor="bg-rose-400">
+        My Portofolio
+      </TitleSection>
       <div
         id="porto"
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4"
@@ -47,6 +43,11 @@ const Porto = () => {
             <CardPorto title={item.title} image={item.image} url={item.url} />
           </div>
         ))}
+      </div>
+      <div className="flex justify-center">
+        <ButtonViewMore url="/portofolio">
+          View more of my portfolios
+        </ButtonViewMore>
       </div>
     </div>
   );

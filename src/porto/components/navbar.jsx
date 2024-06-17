@@ -18,7 +18,7 @@ const NavbarHome = () => {
     <div className="w-full h-[80px] px-4 md:px-8 lg:px-14 xl:px-20  bg-white shadow justify-between items-center inline-flex font-primary fixed top-0 left-0 right-0 z-50">
       <div className="flex grow shrink basis-0 self-stretch justify-start items-center gap-1">
         <img
-          className="w-[70px] h-[70px]"
+          className="w-[40px] h-[40px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px]"
           src="/assets/logoSenfuri0n.png"
           alt="Logo"
         />

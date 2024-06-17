@@ -1,15 +1,16 @@
 import React from "react";
-import HomeNavbar from "../components/navbar";
 import Jumbotron from "../components/jumbotron";
 import Porto from "../components/portfolioDashboard";
+import Tools from "../components/tools-skills";
+import LayOut from "../components/layout/layout";
 
 function Home() {
   return (
-    <>
-      <HomeNavbar />
+    <LayOut>
       <Jumbotron />
       <Porto />
-    </>
+      <Tools />
+    </LayOut>
   );
 }
 
