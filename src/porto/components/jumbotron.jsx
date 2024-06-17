@@ -7,7 +7,7 @@ const Jumbotron = () => {
         <div className="text-red-800 text-xl md:text-3xl font-normal">
           Hello✨, I'm
         </div>
-        <div className="text-slate-950 text-4xl md:text-5xl lg:text-6xl xl:text-7.5xl font-bold">
+        <div className="text-slate-950 text-3xl md:text-5xl lg:text-6xl xl:text-7.5xl font-bold">
           Muhammad Faturrahman Putra
         </div>
         <div className="text-slate-950 text-xl md:text-3xl font-normal">
