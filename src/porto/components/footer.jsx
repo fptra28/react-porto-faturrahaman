@@ -8,19 +8,19 @@ const Footer = () => {
         <div className="w-full py-7 bg-white flex justify-center items-center flex-wrap text-sm md:text-base">
           <Link
             to="/"
-            className="text-black font-bold hover:text-slate-800 mx-4 my-2"
+            className="text-black font-bold hover:text-red-900 mx-4 my-2"
           >
             HOME
           </Link>
           <Link
             to="/portofolio"
-            className="text-black font-bold hover:text-slate-800 mx-4 my-2"
+            className="text-black font-bold hover:text-red-900 mx-4 my-2"
           >
             PORTFOLIO
           </Link>
           <Link
             to="/about"
-            className="text-black font-bold hover:text-slate-800 mx-4 my-2"
+            className="text-black font-bold hover:text-red-900 mx-4 my-2"
           >
             ABOUT
           </Link>

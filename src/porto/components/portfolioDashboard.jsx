@@ -30,13 +30,13 @@ const Porto = () => {
   ]);
 
   return (
-    <div className="w-full bg-red-800 py-16 px-7 sm:px-12 lg:px-14 xl:px-52 flex flex-col gap-10">
+    <div className="w-full bg-red-800 py-16 px-4 sm:px-8 md:px-12 lg:px-14 xl:px-20 2xl:px-32 flex flex-col gap-10">
       <TitleSection textColor="text-white" lineColor="bg-rose-400">
-        My Portofolio
+        My Portfolio
       </TitleSection>
       <div
         id="porto"
-        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"
       >
         {portfolio.slice(0, 3).map((item, index) => (
           <div key={index} className="w-full flex justify-center items-center">
