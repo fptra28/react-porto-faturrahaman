@@ -2,17 +2,15 @@ import React from "react";
 
 const CardToolsSkill = ({ imageUrl, name, bgLogo }) => {
   return (
-    <div className="p-2.5 flex-col justify-start items-center gap-[21px] inline-flex text-primary">
+    <div className="p-2.5 flex flex-col justify-start items-center gap-4 text-primary">
       <div
-        className={`${bgLogo} w-[100px] h-[100px] drop-shadow-md rounded-xl flex items-center justify-center`}
+        className={`${bgLogo} w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 drop-shadow-md rounded-xl flex items-center justify-center`}
       >
-        <img
-          style={{ width: "100%", height: "100%", borderRadius: "inherit" }}
-          src={imageUrl}
-          alt={name}
-        />
+        <img className="w-full h-full rounded-xl" src={imageUrl} alt={name} />
       </div>
-      <div className="text-black text-xl font-bold text-shadow-xl">{name}</div>
+      <div className="text-black text-base md:text-lg lg:text-xl font-bold text-shadow-xl text-center">
+        {name}
+      </div>
     </div>
   );
 };
