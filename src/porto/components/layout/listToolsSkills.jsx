@@ -47,6 +47,7 @@ const ListToolSkill = () => {
         <div key={item.id}>
           <CardToolsSkill
             bgLogo={item.bg}
+            textColor="text-neutral-900"
             name={item.name}
             imageUrl={item.image}
           />

@@ -20,7 +20,11 @@ module.exports = {
       },
       backgroundImage: {
         'porto-pattern': "url('/assets/Red-Waves-1.png')"
-      }
+      },
+      dropShadow: {
+        'S1': '2px 5px 5px rgba(0, 0, 0, 0.5)',
+        'S2': '-2px 2px 5px rgba(0, 0, 0, 0.3)',
+      },
     },
   },
   plugins: [
