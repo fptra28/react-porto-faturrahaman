@@ -17,6 +17,9 @@ module.exports = {
       },
       padding: {
         '30': '12.7rem',
+      },
+      backgroundImage: {
+        'porto-pattern': "url('/assets/Red-Waves-1.png')"
       }
     },
   },

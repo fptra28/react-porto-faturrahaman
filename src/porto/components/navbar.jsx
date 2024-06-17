@@ -15,7 +15,7 @@ const NavbarHome = () => {
   };
 
   return (
-    <div className="w-full h-[80px] px-4 md:px-8 lg:px-14 xl:px-20 bg-white shadow justify-between items-center flex font-primary fixed top-0 left-0 right-0 z-50">
+    <div className="w-full h-[80px] px-4 md:px-8 lg:px-14 xl:px-20 bg-white drop-shadow-xl justify-between items-center flex font-primary fixed top-0 left-0 right-0 z-50">
       <div className="flex items-center gap-1">
         <img
           className="w-[40px] h-[40px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px]"
@@ -26,7 +26,7 @@ const NavbarHome = () => {
           Faturrahman Ptra
         </div>
       </div>
-      <div className="hidden h-full md:flex items-center space-x-6">
+      <div className="hidden h-full md:flex items-center">
         <NavLink
           to="/"
           className={`h-full px-4 flex items-center ${

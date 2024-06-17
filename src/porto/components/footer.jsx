@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full px-0 bg-white shadow flex flex-col justify-center items-center font-primary">
+    <div className="w-full px-0 bg-white drop-shadow-xl flex flex-col justify-center items-center font-primary">
       <div className="w-full flex flex-col justify-center items-center">
         <div className="w-full py-7 bg-white flex justify-center items-center flex-wrap text-sm md:text-base">
           <Link
@@ -13,7 +13,7 @@ const Footer = () => {
             HOME
           </Link>
           <Link
-            to="/portofolio"
+            to="/portfolio"
             className="text-black font-bold hover:text-red-900 mx-4 my-2"
           >
             PORTFOLIO

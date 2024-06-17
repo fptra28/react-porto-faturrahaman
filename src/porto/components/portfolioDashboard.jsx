@@ -36,7 +36,7 @@ const Porto = () => {
       </TitleSection>
       <div
         id="porto"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 xl:px-20"
       >
         {portfolio.slice(0, 3).map((item, index) => (
           <div key={index} className="w-full flex justify-center items-center">
@@ -45,7 +45,7 @@ const Porto = () => {
         ))}
       </div>
       <div className="flex justify-center">
-        <ButtonViewMore url="/portofolio">
+        <ButtonViewMore url="/portfolio">
           View more of my portfolios
         </ButtonViewMore>
       </div>

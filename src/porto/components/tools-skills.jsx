@@ -1,6 +1,7 @@
 import React from "react";
 import TitleSection from "./title/title";
 import ListToolSkills from "./layout/listToolsSkills";
+import ButtonViewMore from "./button/button";
 
 const ToolSkill = () => {
   return (
@@ -9,6 +10,9 @@ const ToolSkill = () => {
         Tools & Skills
       </TitleSection>
       <ListToolSkills />
+      <div className="flex justify-center">
+        <ButtonViewMore url="/about">View more ABOUT ME</ButtonViewMore>
+      </div>
     </div>
   );
 };
