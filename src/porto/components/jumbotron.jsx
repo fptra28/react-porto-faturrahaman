@@ -13,7 +13,7 @@ const Jumbotron = () => {
         <div className="text-slate-950 text-xl md:text-3xl font-normal">
           Web Developer & UI/UX Designer
         </div>
-        <div className="w-[250px] sm:h-[150px] h-[10px] bg-red-800 rounded-full"></div>
+        <div className="w-[150px] lg:w-[250px] h-[10px] bg-red-800 rounded-full"></div>
       </div>
       <img
         className="lg:w-[500px] lg:h-[500px] md:w-[300px] md:h-[321.6px] xl:w-[600px] xl:h-[643.20px]"
