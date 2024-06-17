@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="w-full px-0 bg-white shadow flex flex-col justify-center items-center font-primary">
       <div className="w-full flex flex-col justify-center items-center">
-        <div className="w-full py-7 bg-white flex justify-center items-center gap-16">
+        <div className="w-full py-7 bg-white flex justify-around items-center px-20">
           <Link
             to="/"
             className="text-black text-base font-bold hover:text-slate-800"
@@ -27,11 +27,8 @@ const Footer = () => {
         </div>
         <div className="w-full h-px border-t border-black"></div>
         <div className="w-full py-7 flex justify-center items-center flex-row">
-          <div className="text-black text-lg font-bold text-center">
-            COPYRIGHT © 2024. Made with ❤️ by
-            <div className="text-red-800 text-lg font-bold ms-1.5">
-              Senfuri0n
-            </div>
+          <div className="text-black text-lg font-bold text-center sm:text-xs px-20">
+            COPYRIGHT © 2024. Made with ❤️ by Senfuri0n
           </div>
         </div>
       </div>
