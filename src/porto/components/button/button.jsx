@@ -7,7 +7,7 @@ const Button = ({ url, children }) => {
       to={url}
       className="inline-flex items-center bg-rose-200 rounded-lg font-bold font-primary hover:bg-rose-400 transition duration-300 ease-in-o"
     >
-      <div className="px-7 py-4 text-base md:text-lg lg:text-xl uppercase">
+      <div className="px-7 py-4 text-base md:text-lg lg:text-xl uppercase text-center">
         {children}
       </div>
     </Link>
