@@ -25,13 +25,13 @@ const ListToolSkill = () => {
       id: 4,
       name: "HTML",
       image: "./assets/html-1.svg",
-      bg: "bg-neutral-300", // Menambahkan properti bgLogo untuk menentukan latar belakang
+      bg: "", // Menambahkan properti bgLogo untuk menentukan latar belakang
     },
     {
       id: 5,
       name: "CSS",
       image: "./assets/CSS3_logo.png",
-      bg: "bg-neutral-300", // Menambahkan properti bgLogo untuk menentukan latar belakang
+      bg: "", // Menambahkan properti bgLogo untuk menentukan latar belakang
     },
     {
       id: 6,
