@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonPorto from "../button/buttonPorto";
 
-const CardListPorto = ({ name, pict, desc, Github, Figma, disabled }) => {
+const CardListPorto = ({ name, pict, desc, Github, Figma }) => {
   const isGithubDisabled = Github === "-";
   const isFigmaDisabled = Figma === "-";
 

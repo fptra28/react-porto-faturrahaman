@@ -6,8 +6,8 @@ const Banner = () => {
       <div className="text-xl md:text-2xl lg:text-3xl text-slate-100 font-semibold text-primary">
         My Portfolios
       </div>
-      <div className="w-16 md:w-24 h-2 md:h-3 bg-red-900 rounded-full"></div>
-      <div className="text-lg md:text-xl lg:text-2xl text-primary text-center">
+      <div className="w-20 md:w-52  h-1 md:h-2 bg-red-500 rounded-full md:bg-red-900"></div>
+      <div className="text-base md:text-xl lg:text-2xl text-primary text-center text-slate-50">
         Let's Dive into My Portfolio!
       </div>
     </div>

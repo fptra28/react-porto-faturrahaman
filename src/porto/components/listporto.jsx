@@ -26,12 +26,12 @@ const ListPorto = () => {
       title: "Nawasena",
       image: "./assets/Project 3.png",
       desc: "Description for Nawasena",
-      Github: "https://github.com/yourusername/nawasena",
+      Github: "-",
       Figma: "https://www.figma.com/",
     },
     {
       id: 4,
-      title: "Parentify",
+      title: "Portofolio Faturrahman",
       image: "./assets/Project 4.png",
       desc: "Description for Parentify",
       Github: "https://github.com/yourusername/parentify",
@@ -40,7 +40,7 @@ const ListPorto = () => {
   ]);
 
   return (
-    <div className="py-20 px-10 flex flex-wrap justify-center gap-4.5 md:px-10 lg:px-20">
+    <div className="py-20 px-5 flex flex-wrap justify-center gap-4.5 md:px-10 lg:px-20">
       {portfolio.map((item) => (
         <CardListPorto
           key={item.id}
