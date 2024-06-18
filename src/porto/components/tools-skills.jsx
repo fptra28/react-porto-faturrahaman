@@ -9,7 +9,7 @@ const ToolSkill = () => {
       <TitleSection textColor="text-black" lineColor="bg-red-800">
         Tools & Skills
       </TitleSection>
-      <ListToolSkills />
+      <ListToolSkills textColor="text-neutral-900" />
       <div className="flex justify-center">
         <ButtonViewMore url="/about">View more ABOUT ME</ButtonViewMore>
       </div>

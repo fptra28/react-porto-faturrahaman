@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CardToolsSkill from "../card/cardTools-Skills";
 
-const ListToolSkill = () => {
+const ListToolSkill = ({ textColor }) => {
   const [data] = useState([
     {
       id: 1,
@@ -42,12 +42,12 @@ const ListToolSkill = () => {
   ]);
 
   return (
-    <div className="w-full flex flex-wrap justify-around items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+    <div className="w-full flex flex-wrap justify-around items-center px-4">
       {data.map((item) => (
         <div key={item.id}>
           <CardToolsSkill
             bgLogo={item.bg}
-            textColor="text-neutral-900"
+            textColor={textColor}
             name={item.name}
             imageUrl={item.image}
           />
