@@ -6,7 +6,7 @@ const LayOut = ({ children }) => {
   return (
     <div className="bg-slate-100">
       <HomeNavbar />
-      {children}
+      <div className="mt-20">{children}</div>
       <Footer />
     </div>
   );

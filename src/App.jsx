@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import HomeUser from "./porto/pages/dasboard";
 import Portofolio from "./porto/pages/portfolio";
+import NotFound from "./porto/pages/404/404";
 import "./App.css";
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
     <Routes>
       <Route index path="/" element={<HomeUser />} />
       <Route path="/portfolio" element={<Portofolio />} />
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
