@@ -25,7 +25,7 @@ const ListPorto = () => {
       id: 3,
       title: "Nawasena",
       image: "./assets/Project 3.png",
-      desc: "Description for Nawasena",
+      desc: "Nawasena: For Your Beauty. Discover, enhance, and celebrate your unique beauty. Explore, indulge, and be inspired!",
       Github: "-",
       Figma: "https://www.figma.com/",
     },
@@ -33,24 +33,35 @@ const ListPorto = () => {
       id: 4,
       title: "Portofolio Faturrahman",
       image: "./assets/Project 4.png",
-      desc: "Description for Parentify",
-      Github: "https://github.com/yourusername/parentify",
+      desc: "Portofolio Faturrahman: a showcase of creative excellence. Discover, explore, and get inspired by innovative designs and projects!",
+      Github: "https://github.com/fptra28/react-porto-faturrahaman.git",
       Figma: "https://www.figma.com/",
+    },
+    {
+      id: 5,
+      title: "Parentify",
+      image: "./assets/Project 5.jpg",
+      desc: "Parentify: a comprehensive platform for modern parents. Explore, learn, and get inspired to nurture and support your family!",
+      Github: "-",
+      Figma:
+        "https://www.figma.com/proto/GhSHENdrszqAl6wrW9JCiK/High-Fidelity?page-id=0%3A1&node-id=213-1967&viewport=716%2C99%2C0.03&t=f0pHSBWIHJrFzQv9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=213%3A1967&show-proto-sidebar=1",
     },
   ]);
 
   return (
-    <div className="py-20 px-5 flex flex-wrap justify-center gap-4.5 md:px-10 lg:px-20">
-      {portfolio.map((item) => (
-        <CardListPorto
-          key={item.id}
-          name={item.title}
-          pict={item.image}
-          desc={item.desc}
-          Github={item.Github}
-          Figma={item.Figma}
-        />
-      ))}
+    <div className="py-20 px-5 flex flex-wrap justify-center md:px-10 lg:px-20">
+      <div className="grid gap-4.5 md:px-10 lg:px-20 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+        {portfolio.map((item) => (
+          <CardListPorto
+            key={item.id}
+            name={item.title}
+            pict={item.image}
+            desc={item.desc}
+            Github={item.Github}
+            Figma={item.Figma}
+          />
+        ))}
+      </div>
     </div>
   );
 };
