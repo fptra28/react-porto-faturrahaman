@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"; // Jika menggunakan React Router
 
 const CardPorto = ({ title, image, url }) => {
   return (
-    <div className="w-full md:w-[484px] rounded-[10px] shadow-lg flex flex-col justify-center items-center overflow-hidden">
+    <div className="w-full md:w-[484px] rounded-xl shadow-lg flex flex-col justify-center items-center overflow-hidden">
       <div className="w-full h-full flex flex-col justify-center items-center">
         <img src={image} className="w-full h-full object-cover" alt={title} />
       </div>

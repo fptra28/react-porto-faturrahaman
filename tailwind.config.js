@@ -25,6 +25,9 @@ module.exports = {
         'S1': '2px 5px 5px rgba(0, 0, 0, 0.5)',
         'S2': '-2px 2px 5px rgba(0, 0, 0, 0.3)',
       },
+      spacing: {
+        '4.5': '17px',
+      },
     },
   },
   plugins: [
