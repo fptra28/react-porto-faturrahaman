@@ -4,10 +4,6 @@ import BannerPorto from "../components/bannerPorto";
 import ListPorto from "../components/listporto";
 
 function Porto() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <LayOut>
       <BannerPorto />
