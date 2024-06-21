@@ -5,7 +5,7 @@ const JumbotronAbout = () => {
   return (
     <div className="w-full px-6 md:px-20 min-[1405px]:px-52 py-16 flex flex-col min-[1500px]:flex-row justify-center items-center gap-10 md:gap-20">
       <img
-        className="drop-shadow-S1 w-full md:w-auto md:max-w-md xl:max-w-lg"
+        className="lg:w-[500px] lg:h-[500px] md:w-[300px] md:h-[321.6px] xl:w-[600px] xl:h-[643.20px] drop-shadow-S1"
         src="/assets/PP.png"
         alt="Profile Picture"
       />
