@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./navbar.css"; // Impor file CSS
 
 const NavbarHome = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,8 +16,29 @@ const NavbarHome = () => {
     return location.pathname === path;
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <div className="w-full h-[80px] px-4 md:px-8 lg:px-14 xl:px-20 bg-white drop-shadow-xl justify-between items-center flex font-primary fixed top-0 left-0 right-0 z-50">
+    <div
+      className={`w-full h-[80px] px-4 md:px-8 lg:px-14 xl:px-20 bg-white drop-shadow-xl justify-between items-center flex font-primary fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="flex items-center gap-1">
         <img
           className="w-[40px] h-[40px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px]"
@@ -33,7 +56,9 @@ const NavbarHome = () => {
             isActive("/") ? "bg-red-800 text-white" : "text-black"
           }`}
         >
-          <div className="text-xl font-bold uppercase">HOME</div>
+          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-bold uppercase">
+            HOME
+          </div>
         </NavLink>
         <NavLink
           to="/portfolio"
@@ -41,7 +66,9 @@ const NavbarHome = () => {
             isActive("/portfolio") ? "bg-red-800 text-white" : "text-black"
           }`}
         >
-          <div className="text-xl font-bold uppercase">Portfolio</div>
+          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-bold uppercase">
+            Portfolio
+          </div>
         </NavLink>
         <NavLink
           to="/about"
@@ -49,7 +76,9 @@ const NavbarHome = () => {
             isActive("/about") ? "bg-red-800 text-white" : "text-black"
           }`}
         >
-          <div className="text-xl font-bold uppercase">ABOUT</div>
+          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-bold uppercase">
+            ABOUT
+          </div>
         </NavLink>
       </div>
       <div className="md:hidden flex items-center">
