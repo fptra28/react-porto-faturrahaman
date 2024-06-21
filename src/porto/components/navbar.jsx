@@ -56,7 +56,7 @@ const NavbarHome = () => {
             isActive("/") ? "bg-red-800 text-white" : "text-black"
           }`}
         >
-          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-bold uppercase">
+          <div className="text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase">
             HOME
           </div>
         </NavLink>
@@ -66,7 +66,7 @@ const NavbarHome = () => {
             isActive("/portfolio") ? "bg-red-800 text-white" : "text-black"
           }`}
         >
-          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-bold uppercase">
+          <div className="text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase">
             Portfolio
           </div>
         </NavLink>
@@ -76,7 +76,7 @@ const NavbarHome = () => {
             isActive("/about") ? "bg-red-800 text-white" : "text-black"
           }`}
         >
-          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-bold uppercase">
+          <div className="text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase">
             ABOUT
           </div>
         </NavLink>
