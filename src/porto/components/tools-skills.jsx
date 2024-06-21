@@ -5,7 +5,7 @@ import ButtonViewMore from "./button/button";
 
 const ToolSkill = () => {
   return (
-    <div className="w-full py-16 px-7 sm:px-16 lg:px-18 xl:px-52 flex flex-col gap-10">
+    <div className="w-full flex flex-col min-[1187px]:flex-row justify-center items-center py-10 px-5 sm:px lg:px-20 min-[1443px]:px-52 gap-5">
       <TitleSection textColor="text-black" lineColor="bg-red-800">
         Tools & Skills
       </TitleSection>

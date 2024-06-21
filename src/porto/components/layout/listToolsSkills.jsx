@@ -42,7 +42,7 @@ const ListToolSkill = ({ textColor }) => {
   ]);
 
   return (
-    <div className="w-full flex flex-wrap justify-around items-center px-4">
+    <div className="w-full flex flex-wrap justify-around items-center px-16">
       {data.map((item) => (
         <div key={item.id}>
           <CardToolsSkill
