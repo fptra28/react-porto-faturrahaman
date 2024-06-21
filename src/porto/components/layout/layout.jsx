@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import HomeNavbar from "../navbar";
 import Footer from "../footer";
-import { useEffect } from "react";
 
 const LayOut = ({ children }) => {
   useEffect(() => {
