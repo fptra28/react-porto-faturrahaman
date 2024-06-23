@@ -23,9 +23,7 @@ const Porto = () => {
         ))}
       </div>
       <div className="w-full flex justify-center items-center">
-        <ButtonViewMore url="/portofolio">
-          View More My Portfolio
-        </ButtonViewMore>
+        <ButtonViewMore url="/portfolio">View More My Portfolio</ButtonViewMore>
       </div>
     </div>
   );
