@@ -12,7 +12,8 @@ function About() {
         background="bg-red-800"
         Text="text-neutral-50"
         Line="bg-rose-400"
-        border="border-2 border-neutral-50"
+        border="border-2"
+        borderColor="border-neutral-50"
       />
       <ListSocmedia />
     </LayOut>
