@@ -10,7 +10,7 @@ const ListSocmed = () => {
         <TitleSection textColor="text-neutral-950" lineColor="bg-red-800">
           Contact Me
         </TitleSection>
-        <div className="text-lg flex justify-center font-semibold">
+        <div className="text-base md:text-lg flex justify-center font-semibold">
           You can Contact me at
         </div>
       </div>
