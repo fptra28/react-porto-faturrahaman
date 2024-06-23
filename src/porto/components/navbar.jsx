@@ -87,10 +87,11 @@ const NavbarHome = () => {
             ABOUT
           </div>
         </NavLink>
+        <div className="w-[2px] h-full bg-neutral-950"></div>
         <div className="ps-4">
           <NavLink
             to="https://www.linkedin.com/in/fptra28"
-            className="bg-red-800 text-neutral-50 px-5 py-2 rounded-md hover:bg-red-500 text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase transition duration-300 ease-in-out"
+            className="bg-red-800 text-neutral-50 px-5 py-2 rounded-md hover:bg-red-700 text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase transition duration-300 ease-in-out"
           >
             HIRE ME
           </NavLink>
@@ -161,7 +162,7 @@ const NavbarHome = () => {
           <div className="block py-2 px-4 justify-center">
             <NavLink
               to="https://www.linkedin.com/in/fptra28"
-              className="w-full flex justify-center bg-red-800 text-neutral-50 px-5 py-2 rounded-md hover:bg-red-500 text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase transition duration-300 ease-in-out"
+              className="w-full flex justify-center bg-red-800 text-neutral-50 px-5 py-2 rounded-md hover:bg-red-700 text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase transition duration-300 ease-in-out"
             >
               HIRE ME
             </NavLink>

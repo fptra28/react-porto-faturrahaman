@@ -5,7 +5,7 @@ import { SocMed } from "../../data/data";
 
 const ListSocmed = () => {
   return (
-    <div className="py-16 flex flex-col gap-8 font-primary">
+    <section className="py-16 flex flex-col gap-8 font-primary">
       <div className="flex flex-col gap-4">
         <TitleSection textColor="text-neutral-950" lineColor="bg-red-800">
           Contact Me
@@ -19,7 +19,7 @@ const ListSocmed = () => {
           <CardSocmed SocMed={item.name} img={item.image} url={item.url} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ const CardListPorto = ({ name, pict, desc, Github, Figma }) => {
   const isFigmaDisabled = Figma === "-";
 
   return (
-    <div className="w-full md:max-w-[450px] p-5 bg-white rounded-2xl flex flex-col justify-start items-start gap-4 overflow-hidden drop-shadow-S2">
+    <div className="w-full md:max-w-[400px] lg:max-w-[450px] p-5 bg-white rounded-2xl flex flex-col justify-start items-start gap-4 overflow-hidden drop-shadow-S2">
       <div className="w-full flex justify-center items-center">
         <img
           className="w-full h-auto object-cover rounded-lg"

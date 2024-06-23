@@ -82,3 +82,45 @@ export const SocMed = [
         url: "mailto:faturrahman86.fr@gmail.com",
     },
 ];
+
+export const SKILLS = [
+    {
+        title: "Frontend",
+        icon: "./assets/frontend-icon.png",
+        skills: [
+            { skill: "HTML5", percentage: "80%" },
+            { skill: "CSS3 (Sass/SCSS)", percentage: "85%" },
+            { skill: "JavaScript", percentage: "75%" },
+            { skill: "React.js", percentage: "80%" },
+            { skill: "Tailwind CSS", percentage: "80%" }
+        ],
+    },
+    {
+        title: "Backend",
+        icon: "./assets/backend-icon.png",
+        skills: [
+            { skill: "Node.js", percentage: "70%" },
+            { skill: "Express.js", percentage: "65%" },
+        ],
+    },
+    {
+        title: "Tools",
+        icon: "./assets/tools-icon.png",
+        skills: [
+            { skill: "Git & Github", percentage: "85%" },
+            { skill: "Visual Studio Code", percentage: "75%" },
+            { skill: "Figma", percentage: "90%" },
+
+        ],
+    },
+    {
+        title: "Soft Skills",
+        icon: "./assets/soft-skills-icon.png",
+        skills: [
+            { skill: "Teamwork", percentage: "80%" },
+            { skill: "Good Communication", percentage: "85%" },
+            { skill: "Detail Oriented", percentage: "80%" },
+            { skill: "Responsive Design", percentage: "70%" },
+        ],
+    },
+];

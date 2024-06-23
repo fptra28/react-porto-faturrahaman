@@ -3,7 +3,7 @@ import ButtonDownload from "./button/buttonDownload";
 
 const JumbotronAbout = () => {
   return (
-    <div className="w-full px-6 md:px-20 min-[1405px]:px-52 py-16 flex flex-col min-[1500px]:flex-row justify-center items-center gap-10 md:gap-20">
+    <section className="w-full px-6 md:px-20 min-[1405px]:px-52 py-16 flex flex-col min-[1500px]:flex-row justify-center items-center gap-10 md:gap-20">
       <img
         className="lg:w-[500px] lg:h-[500px] md:w-[300px] md:h-[321.6px] xl:w-[600px] xl:h-[643.20px] drop-shadow-S1"
         src="/assets/PP.png"
@@ -13,7 +13,7 @@ const JumbotronAbout = () => {
         <div className="text-red-800 text-2xl md:text-3xl lg:text-4xl font-bold uppercase">
           About Me
         </div>
-        <div className="text-slate-950 text-base md:text-lg lg:text-2xl text-justify flex flex-col gap-4">
+        <div className="text-slate-950 text-base md:text-lg lg:text-xl text-justify flex flex-col gap-4">
           <div>
             Hello, I'm Muhammad Faturrahman Putra, a passionate Web Developer
             and UI/UX Designer with a love for creating beautiful and functional
@@ -37,7 +37,7 @@ const JumbotronAbout = () => {
           <ButtonDownload />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
