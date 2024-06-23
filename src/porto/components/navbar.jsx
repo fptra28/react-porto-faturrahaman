@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import "./navbar.css"; // Import file CSS
+import "./navbar.css"; // Import file
 
 const NavbarHome = () => {
   const location = useLocation();
