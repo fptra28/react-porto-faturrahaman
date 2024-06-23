@@ -125,7 +125,7 @@ const NavbarHome = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden absolute top-[80px] inset-x-0 bg-white shadow-lg z-50">
+        <div className="md:hidden absolute top-[80px] inset-x-0 bg-neutral-300 shadow-lg z-50">
           <NavLink
             to="/"
             className={`block py-2 px-4 ${
