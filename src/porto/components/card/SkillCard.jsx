@@ -3,7 +3,7 @@ import React from "react";
 const SkillCard = ({ title, iconUrl, isActive, onClick, border }) => {
   return (
     <div
-      className={`w-full p-4 md:p-5 flex gap-4 rounded-lg drop-shadow-xl items-center justify-between bg-red-800 ${border} hover:bg-red-700 text-neutral-50 font-primary border-2 border-red-800 cursor-pointer transition-all duration-300 ${
+      className={`w-full px-3 py-2 md:px-5 md:py-3 flex gap-4 rounded-lg drop-shadow-xl items-center justify-between bg-red-800 ${border} hover:bg-red-700 text-neutral-50 font-primary border-2 border-red-800 cursor-pointer transition-all duration-300 ${
         isActive ? "bg-red-900 border-red-900" : ""
       }`}
       onClick={() => onClick()}

@@ -8,8 +8,8 @@ const SkillsInfoCard = ({ heading, skills }) => {
         {skills.map((item, index) => (
           <React.Fragment key={`skill_${index}`}>
             <div className="flex justify-between items-center">
-              <p className="text-base font-medium">{item.skill}</p>
-              <p className="text-sm font-semibold text-gray-500">
+              <p className="text-sm font-semibold">{item.skill}</p>
+              <p className="text-sm font-medium text-gray-500">
                 {item.percentage}
               </p>
             </div>
