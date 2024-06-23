@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Jumbotron from "../components/jumbotron";
 import Porto from "../components/portfolioDashboard";
 import Tools from "../components/tools-skills";

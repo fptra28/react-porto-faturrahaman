@@ -19,7 +19,8 @@ module.exports = {
         '30': '12.7rem',
       },
       backgroundImage: {
-        'porto-pattern': "url('/assets/Red-Waves-1.png')"
+        'porto-pattern': "url('/assets/Red-Waves-1.png')",
+        'main': "url('/assets/bg-main.png')",
       },
       dropShadow: {
         'S1': '2px 5px 5px rgba(0, 0, 0, 0.5)',

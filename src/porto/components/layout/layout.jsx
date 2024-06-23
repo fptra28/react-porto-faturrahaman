@@ -8,7 +8,7 @@ const LayOut = ({ children }) => {
   }, []);
 
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-50/75 backdrop-blur-3xl overflow-hidden">
       <HomeNavbar />
       <div className="mt-20">{children}</div>
       <Footer />

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import "./navbar.css"; // Impor file CSS
+import "./navbar.css"; // Import file CSS
 
 const NavbarHome = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,22 +17,22 @@ const NavbarHome = () => {
     return location.pathname === path;
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-      setLastScrollY(window.scrollY);
-    };
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
 
+    setIsScrollingUp(currentScrollY < lastScrollY);
+    setLastScrollY(currentScrollY);
+
+    setIsVisible(!isScrollingUp || currentScrollY <= 0);
+  };
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, isScrollingUp]);
 
   return (
     <div
@@ -53,7 +54,9 @@ const NavbarHome = () => {
         <NavLink
           to="/"
           className={`h-full px-4 flex items-center ${
-            isActive("/") ? "bg-red-800 text-white" : "text-black"
+            isActive("/")
+              ? "bg-red-800 text-white"
+              : "text-black hover:bg-red-800 hover:text-neutral-50 transition duration-300 ease-in-out"
           }`}
         >
           <div className="text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase">
@@ -63,7 +66,9 @@ const NavbarHome = () => {
         <NavLink
           to="/portfolio"
           className={`h-full px-4 flex items-center ${
-            isActive("/portfolio") ? "bg-red-800 text-white" : "text-black"
+            isActive("/portfolio")
+              ? "bg-red-800 text-white"
+              : "text-black hover:bg-red-800 hover:text-neutral-50 transition duration-300 ease-in-out"
           }`}
         >
           <div className="text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase">
@@ -73,13 +78,23 @@ const NavbarHome = () => {
         <NavLink
           to="/about"
           className={`h-full px-4 flex items-center ${
-            isActive("/about") ? "bg-red-800 text-white" : "text-black"
+            isActive("/about")
+              ? "bg-red-800 text-white"
+              : "text-black hover:bg-red-800 hover:text-neutral-50 transition duration-300 ease-in-out"
           }`}
         >
           <div className="text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase">
             ABOUT
           </div>
         </NavLink>
+        <div className="ps-4">
+          <NavLink
+            to="https://www.linkedin.com/in/fptra28"
+            className="bg-red-800 text-neutral-50 px-5 py-2 rounded-md hover:bg-red-500 text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase transition duration-300 ease-in-out"
+          >
+            HIRE ME
+          </NavLink>
+        </div>
       </div>
       <div className="md:hidden flex items-center">
         <button onClick={toggleMenu} className="p-2 rounded-md text-gray-700">
@@ -113,7 +128,9 @@ const NavbarHome = () => {
           <NavLink
             to="/"
             className={`block py-2 px-4 ${
-              isActive("/") ? "bg-red-800 text-white" : "text-black"
+              isActive("/")
+                ? "bg-red-800 text-white"
+                : "text-black hover:bg-red-800 hover:text-neutral-50 transition duration-300 ease-in-out"
             }`}
             onClick={toggleMenu}
           >
@@ -122,7 +139,9 @@ const NavbarHome = () => {
           <NavLink
             to="/portfolio"
             className={`block py-2 px-4 ${
-              isActive("/portfolio") ? "bg-red-800 text-white" : "text-black"
+              isActive("/portfolio")
+                ? "bg-red-800 text-white"
+                : "text-black hover:bg-red-800 hover:text-neutral-50 transition duration-300 ease-in-out"
             }`}
             onClick={toggleMenu}
           >
@@ -131,12 +150,22 @@ const NavbarHome = () => {
           <NavLink
             to="/about"
             className={`block py-2 px-4 ${
-              isActive("/about") ? "bg-red-800 text-white" : "text-black"
+              isActive("/about")
+                ? "bg-red-800 text-white"
+                : "text-black hover:bg-red-800 hover:text-neutral-50 transition duration-300 ease-in-out"
             }`}
             onClick={toggleMenu}
           >
             About
           </NavLink>
+          <div className="block py-2 px-4 justify-center">
+            <NavLink
+              to="https://www.linkedin.com/in/fptra28"
+              className="w-full flex justify-center bg-red-800 text-neutral-50 px-5 py-2 rounded-md hover:bg-red-500 text-base sm:text-lg md:text-xl xl:text-xl font-bold uppercase transition duration-300 ease-in-out"
+            >
+              HIRE ME
+            </NavLink>
+          </div>
         </div>
       )}
     </div>

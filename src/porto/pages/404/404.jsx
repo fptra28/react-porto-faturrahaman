@@ -1,7 +1,6 @@
 import React from "react";
 import LayOut from "../../components/layout/layout";
 import Button from "../../components/button/button";
-import PageNotFoundImage from "../../../../public/assets/PageNotFound.png"; // Pastikan jalur ini benar
 
 function NotFound() {
   return (
@@ -9,7 +8,7 @@ function NotFound() {
       <div className="w-full h-full py-24 px-16 flex flex-col justify-center items-center gap-10">
         <img
           className="w-[400px] max-w-full h-auto"
-          src={PageNotFoundImage}
+          src="/assets/PageNotFound.png"
           alt="404"
         />
         <div className="flex flex-col justify-center items-center font-primary gap-4 text-center">
