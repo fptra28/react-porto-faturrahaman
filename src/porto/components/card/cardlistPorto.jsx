@@ -15,7 +15,7 @@ const CardListPorto = ({ name, pict, desc, Github, Figma }) => {
         />
       </div>
 
-      <div className="w-full p-2.5 bg-white flex flex-col justify-start items-stretch gap-4 font-primary">
+      <div className="w-full bg-white flex flex-col justify-start items-stretch gap-4 font-primary">
         <div className="w-full flex flex-col justify-start items-start gap-2.5 flex-grow">
           <div className="text-black text-lg md:text-xl lg:text-2xl font-bold min-[1280px]:min-h-[64px] min-[1370px]:min-h-0">
             {name}
