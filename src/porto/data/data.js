@@ -88,11 +88,11 @@ export const SKILLS = [
         title: "Frontend",
         icon: "./assets/frontend-icon.png",
         skills: [
-            { skill: "HTML5", percentage: "80%" },
-            { skill: "CSS3 (Sass/SCSS)", percentage: "85%" },
-            { skill: "JavaScript", percentage: "75%" },
-            { skill: "React.js", percentage: "80%" },
-            { skill: "Tailwind CSS", percentage: "80%" }
+            { skill: "HTML5", percentage: "85%" },
+            { skill: "CSS3 (Sass/SCSS)", percentage: "80%" },
+            { skill: "JavaScript", percentage: "78%" },
+            { skill: "React.js", percentage: "85%" },
+            { skill: "Tailwind CSS", percentage: "85%" }
         ],
     },
     {
@@ -109,7 +109,7 @@ export const SKILLS = [
         icon: "./assets/tools-icon.png",
         skills: [
             { skill: "Git & Github", percentage: "85%" },
-            { skill: "Visual Studio Code", percentage: "75%" },
+            { skill: "Visual Studio Code", percentage: "80%" },
             { skill: "Figma", percentage: "90%" },
 
         ],
