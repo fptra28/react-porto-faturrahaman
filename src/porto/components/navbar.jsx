@@ -87,7 +87,7 @@ const NavbarHome = () => {
             ABOUT
           </div>
         </NavLink>
-        <div className="w-[2px] h-full bg-neutral-950"></div>
+        <div className="w-[2px] h-full bg-neutral-500"></div>
         <div className="ps-4">
           <NavLink
             to="https://www.linkedin.com/in/fptra28"
