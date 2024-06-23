@@ -23,7 +23,7 @@ const NavbarHome = () => {
     setIsScrollingUp(currentScrollY < lastScrollY);
     setLastScrollY(currentScrollY);
 
-    setIsVisible(!isScrollingUp || currentScrollY <= 0);
+    setIsVisible(isScrollingUp || currentScrollY <= 0); // Hidden saat scroll ke bawah, visible saat scroll ke atas atau di posisi paling atas
   };
 
   useEffect(() => {

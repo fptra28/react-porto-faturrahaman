@@ -5,7 +5,14 @@ import SkillsInfoCard from "./card/SkillInfoCard";
 import TitleSection from "./title/title";
 import ButtonViewMore from "./button/button";
 
-const Skills = ({ background, Text, Line, border, showButton }) => {
+const Skills = ({
+  background,
+  Text,
+  Line,
+  border,
+  showButton,
+  borderColor,
+}) => {
   const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
 
   const handleSelectedSkill = (data) => {
@@ -29,6 +36,7 @@ const Skills = ({ background, Text, Line, border, showButton }) => {
               isActive={selectedSkill.title === item.title}
               onClick={() => handleSelectedSkill(item)}
               border={border}
+              borderColor={borderColor}
             />
           ))}
         </div>

@@ -14,6 +14,8 @@ function Home() {
         Text="text-neutral-950"
         Line="bg-red-800"
         showButton={true}
+        border="border-0"
+        borderColor="border-transparent"
       />
     </LayOut>
   );
