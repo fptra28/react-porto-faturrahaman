@@ -6,11 +6,11 @@ import ButtonViewMore from "./button/button";
 
 const Porto = () => {
   return (
-    <div className="bg-red-800 gap-8 py-16 px-5 flex flex-wrap justify-center md:px-5 lg:px-52">
+    <div className="bg-red-800 gap-8 py-16 px-5 flex flex-wrap justify-center md:px-2 lg:px-28 min-[1281px]:px-52">
       <TitleSection textColor="text-white" lineColor="bg-rose-400">
         My Portfolio
       </TitleSection>
-      <div className="w-full flex flex-wrap flex-row justify-center gap-4">
+      <div className="w-full flex flex-wrap flex-row justify-center gap-4 xl:justify-around">
         {portfolio.slice(0, 3).map((item, index) => (
           <CardListPorto
             key={item.id}

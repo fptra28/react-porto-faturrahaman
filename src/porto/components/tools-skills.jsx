@@ -21,7 +21,7 @@ const Skills = ({
 
   return (
     <section
-      className={`px-4 md:px-8 lg:px-52 ${background} py-16 w-full flex flex-col gap-8`}
+      className={`px-4 md:px-8 lg:px-28 min-[1281px]:px-52 ${background} py-16 w-full flex flex-col gap-8`}
     >
       <TitleSection textColor={Text} lineColor={Line}>
         Tools & Skills

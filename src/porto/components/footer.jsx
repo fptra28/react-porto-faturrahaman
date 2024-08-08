@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="w-full h-px border-t border-black"></div>
         <div className="w-full py-3 flex justify-center items-center px-20 text-black text-sm text-center sm:text-lg flex-col md:flex-row">
           COPYRIGHT © 2024. Made with ❤️ by
-          <div className="ps-2 font-semibold">Senfuri0n</div>
+          <div className="ps-0 md:ps-2 font-semibold">Senfuri0n</div>
         </div>
       </div>
     </div>

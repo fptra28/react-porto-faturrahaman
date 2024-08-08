@@ -40,7 +40,7 @@ const NavbarHome = () => {
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="flex items-center gap-1">
+      <div className="flex justify-center items-center gap-1">
         <img
           className="w-[40px] h-[40px] md:w-[55px] md:h-[55px] lg:w-[60px] lg:h-[60px]"
           src="/assets/logoSenfuri0n.png"
