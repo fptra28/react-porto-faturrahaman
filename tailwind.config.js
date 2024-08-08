@@ -20,7 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         "porto-pattern": "url('/assets/Red-Waves-1.png')",
-        main: "url('/assets/magicpattern-mesh-gradient-1723125817333.png')",
+        main: "url('/assets/MagicPattern-design.png')",
       },
       dropShadow: {
         S1: "2px 5px 5px rgba(0, 0, 0, 0.5)",
