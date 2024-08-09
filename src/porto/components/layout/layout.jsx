@@ -8,10 +8,13 @@ const LayOut = ({ children }) => {
   }, []);
 
   return (
-    <div className="bg-main bg-cover bg-center bg-repeat-y">
-      <HomeNavbar />
-      <div className="mt-20">{children}</div>
-      <Footer />
+    <div className="relative">
+      <div className="absolute inset-0 bg-main bg-cover bg-center opacity-50"></div>
+      <div className="relative">
+        <HomeNavbar />
+        <div className="mt-20 bg-frosted-glass backdrop-blur-frosted">{children}</div>
+        <Footer />
+      </div>
     </div>
   );
 };
