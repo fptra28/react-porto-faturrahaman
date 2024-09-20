@@ -41,6 +41,15 @@ export const portfolio = [
     Figma:
       "https://www.figma.com/proto/GhSHENdrszqAl6wrW9JCiK/High-Fidelity?page-id=0%3A1&node-id=213-1967&viewport=716%2C99%2C0.03&t=f0pHSBWIHJrFzQv9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=213%3A1967&show-proto-sidebar=1",
   },
+  {
+    id: 6,
+    title: "Design Learning App",
+    image: "./assets/leraning-Design.png",
+    desc: "Design of internship acceptance task on `dibimbing` to make App Learning Video Design",
+    Github: "-",
+    Figma:
+      "https://www.figma.com/design/cJ6idelZCwkZui9Jgu1ZvZ/Design?node-id=0-1&t=WgZGbaKC4gJnP4ax-1https://www.figma.com/proto/GhSHENdrszqAl6wrW9JCiK/High-Fidelity?page-id=0%3A1&node-id=213-1967&viewport=716%2C99%2C0.03&t=f0pHSBWIHJrFzQv9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=213%3A1967&show-proto-sidebar=1",
+  },
 ];
 
 export const SocMed = [
