@@ -50,6 +50,14 @@ export const portfolio = [
     Figma:
       "https://www.figma.com/design/cJ6idelZCwkZui9Jgu1ZvZ/Design?node-id=0-1&t=WgZGbaKC4gJnP4ax-1https://www.figma.com/proto/GhSHENdrszqAl6wrW9JCiK/High-Fidelity?page-id=0%3A1&node-id=213-1967&viewport=716%2C99%2C0.03&t=f0pHSBWIHJrFzQv9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=213%3A1967&show-proto-sidebar=1",
   },
+  {
+    id: 7,
+    title: "Vellorist",
+    image: "./assets/leraning-Design.png",
+    desc: "-",
+    Github: "https://github.com/fptra28/vellorist-web.git",
+    Figma: "-",
+  },
 ];
 
 export const SocMed = [
@@ -101,6 +109,7 @@ export const SKILLS = [
       { skill: "JavaScript", percentage: "78%" },
       { skill: "React.js", percentage: "85%" },
       { skill: "Tailwind CSS", percentage: "85%" },
+      { skill: "Bootstrap", percentage: "85%" },
     ],
   },
   {
@@ -109,7 +118,7 @@ export const SKILLS = [
     skills: [
       { skill: "Node.js", percentage: "70%" },
       { skill: "Express.js", percentage: "65%" },
-      { skill: "PHP", percentage: "60%" },
+      { skill: "PHP", percentage: "80%" },
     ],
   },
   {
@@ -128,7 +137,7 @@ export const SKILLS = [
       { skill: "Teamwork", percentage: "80%" },
       { skill: "Good Communication", percentage: "85%" },
       { skill: "Detail Oriented", percentage: "80%" },
-      { skill: "Responsive Design", percentage: "70%" },
+      { skill: "Responsive Design", percentage: "75%" },
     ],
   },
 ];
