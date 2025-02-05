@@ -53,8 +53,8 @@ export const portfolio = [
   {
     id: 7,
     title: "Vellorist",
-    image: "./assets/leraning-Design.png",
-    desc: "-",
+    image: "./assets/projek-vellorist.png",
+    desc: "Vellorist: a premium online florist. Explore our beautifully curated flower arrangements and gifts for every occasion. Fresh, elegant, and delivered with care!",
     Github: "https://github.com/fptra28/vellorist-web.git",
     Figma: "-",
   },
