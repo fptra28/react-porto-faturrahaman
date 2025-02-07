@@ -6,25 +6,21 @@ const CardListPorto = ({ name, pict, desc, Github, Figma }) => {
   const isFigmaDisabled = Figma === "-";
 
   return (
-    <div className="w-full md:max-w-[400px] lg:max-w-[450px] p-5 bg-white rounded-2xl flex flex-col justify-start items-start gap-4 overflow-hidden drop-shadow-S2">
-      <div className="w-full flex justify-center items-center">
-        <img
-          className="w-full h-auto object-cover rounded-lg"
-          src={pict}
-          alt={name}
-        />
+    <div className="w-full max-w-md lg:max-w-lg p-5 bg-white rounded-2xl flex flex-col gap-4 shadow-lg overflow-hidden">
+      {/* Image Section */}
+      <div className="w-full flex justify-center">
+        <img className="w-full h-auto object-cover rounded-lg" src={pict} alt={name} />
       </div>
 
-      <div className="w-full bg-white flex flex-col justify-start items-stretch gap-4 font-primary">
-        <div className="w-full flex flex-col justify-start items-start gap-2.5 flex-grow">
-          <div className="text-black text-lg md:text-xl lg:text-2xl font-bold min-[1280px]:min-h-[64px] min-[1370px]:min-h-0">
-            {name}
-          </div>
-          <div className="text-zinc-500 text-sm font-normal lg:text-base min-[1280px]:min-h-[120px] min-[1370px]:min-h-[100px] min-[1585px]:min-h-[72px] min-[1025px]:min-h-[72px]">
-            {desc}
-          </div>
+      {/* Content Section */}
+      <div className="flex flex-col gap-4 font-primary h-full">
+        <div className="flex flex-col">
+          <h3 className="text-black text-xl lg:text-2xl font-bold">{name}</h3>
+          <p className="text-zinc-500 text-sm lg:text-base">{desc}</p>
         </div>
-        <div className="w-full flex justify-center items-center flex-col gap-2.5">
+
+        {/* Button Section */}
+        <div className="flex flex-col gap-2.5 mt-auto">
           <ButtonPorto
             name="Figma"
             url={Figma}
