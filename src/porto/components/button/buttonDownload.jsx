@@ -3,7 +3,7 @@ import React from "react";
 const ButtonDownload = () => {
   return (
     <a
-      href="./assets/cv-Muhammad Faturrahman Putra-1pdf"
+      href="./assets/cv-Muhammad Faturrahman Putra-1.pdf"
       download
       className="px-7 py-3 bg-red-800 rounded-[10px] justify-center items-center gap-4 inline-flex text-white hover:bg-red-950 transition duration-300 ease-in-out">
       <svg
