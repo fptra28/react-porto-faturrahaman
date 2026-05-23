@@ -11,7 +11,7 @@ export default function Logo() {
         className="object-contain"
       />
 
-      <span className="text-xl font-bold italic tracking-wide text-white">
+      <span className="md:text-xl font-bold italic tracking-wide text-white">
         Faturrahman Ptra
       </span>
     </div>

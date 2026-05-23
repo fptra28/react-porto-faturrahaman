@@ -4,8 +4,8 @@ interface TechBadgeProps {
 
 export default function TechBadge({ label }: TechBadgeProps) {
   return (
-    <div className="w-full rounded-full bg-white/20 px-3 py-1 text-center backdrop-blur-md">
-      <p className="text-sm text-white">{label}</p>
+    <div className="w-fit rounded bg-stone-700/20 px-2 py-1 text-center backdrop-blur-md">
+      <p className="text-xs text-white">{label}</p>
     </div>
   );
 }

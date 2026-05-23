@@ -1,39 +1,23 @@
 import ProjectCard from "./ProjectCard";
+import type { ProjectViewModel } from "@/api/projects";
 
-export default function ProjectGrid() {
+interface ProjectGridProps {
+  projects: ProjectViewModel[];
+}
+
+export default function ProjectGrid({ projects }: ProjectGridProps) {
   return (
     <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-      <ProjectCard
-        image="/assets/project1.png"
-        title="Cinematix Platform"
-        description="Modern movie platform dashboard with responsive UI design."
-        technologies={["Next.js", "Laravel"]}
-        link="#"
-      />
-
-      <ProjectCard
-        image="/assets/project1.png"
-        title="Portfolio Website"
-        description="Personal portfolio website with modern UI design."
-        technologies={["React", "Tailwind"]}
-        link="#"
-      />
-
-      <ProjectCard
-        image="/assets/project1.png"
-        title="Cinematix Platform"
-        description="Modern movie platform dashboard with responsive UI design."
-        technologies={["Next.js", "Laravel"]}
-        link="#"
-      />
-
-      <ProjectCard
-        image="/assets/project1.png"
-        title="Portfolio Website"
-        description="Personal portfolio website with modern UI design."
-        technologies={["React", "Tailwind"]}
-        link="#"
-      />
+      {projects.map((project) => (
+        <ProjectCard
+          key={project.id}
+          image={project.image}
+          title={project.title}
+          description={project.description}
+          technologies={project.technologies}
+          link={project.link}
+        />
+      ))}
     </div>
   );
 }

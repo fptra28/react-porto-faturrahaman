@@ -6,26 +6,40 @@ import { usePathname } from "next/navigation";
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  className?: string;
+  activeClassName?: string;
+  inactiveClassName?: string;
+  onClick?: () => void;
 }
 
-export default function NavLink({ href, children }: NavLinkProps) {
+export default function NavLink({
+  href,
+  children,
+  className = "",
+  activeClassName,
+  inactiveClassName,
+  onClick,
+}: NavLinkProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
+
+  const defaultBaseClass =
+    "relative p-2 text-sm font-medium transition duration-300 h-full";
+  const defaultActiveClass = "text-red-500 border-b border-red-500";
+  const defaultInactiveClass =
+    "text-white hover:text-red-500 hover:border-b hover:border-red-500";
 
   return (
     <Link
       href={href}
-      className={`relative py-2 text-sm font-medium transition duration-300 ${
-        isActive ? "text-red-400" : "text-white hover:text-red-400"
+      onClick={onClick}
+      className={`${defaultBaseClass} ${className} ${
+        isActive
+          ? activeClassName ?? defaultActiveClass
+          : inactiveClassName ?? defaultInactiveClass
       }`}
     >
-      {children}
-
-      <span
-        className={`absolute left-0 bottom-0 h-[2px] rounded-full bg-red-500 transition-all duration-300 ${
-          isActive ? "w-full" : "w-0"
-        }`}
-      />
+      <div className="flex items-center h-full">{children}</div>
     </Link>
   );
 }

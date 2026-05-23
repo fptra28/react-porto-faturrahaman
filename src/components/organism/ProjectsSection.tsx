@@ -1,20 +1,23 @@
+import { getProjects } from "@/api/projects";
 import SectionTitle from "../atoms/SectionTitle";
 import ProjectGrid from "../molecules/ProjectGrid";
 
-export default function ProjectsSection() {
+export default async function ProjectsSection() {
+  const projects = await getProjects();
+  const topProjects = projects.slice(0, 4);
+
   return (
-    <section className="bg-neutral-900 py-14">
-      <div className="mx-auto max-w-7xl px-6 lg:px-0">
+    <section className="py-7 px-4 md:px-6 lg:px-12">
+      <div className="mx-auto max-w-7xl">
         <SectionTitle title="What I've Built" />
 
-        <ProjectGrid />
-
-        <a
-          href=""
-          className="mt-6 mx-auto block text-center bg-white hover:bg-neutral-300 w-fit px-10 py-2 rounded-full text-red-500 hover:text-red-700 transition duration-300"
-        >
-          View More...
-        </a>
+        {topProjects.length > 0 ? (
+          <ProjectGrid projects={topProjects} />
+        ) : (
+          <div className="mt-8 rounded-xl border border-red-950/50 bg-red-950/10 p-4 text-sm text-red-300">
+            Projects belum tersedia atau API tidak dapat diakses saat ini.
+          </div>
+        )}
       </div>
     </section>
   );

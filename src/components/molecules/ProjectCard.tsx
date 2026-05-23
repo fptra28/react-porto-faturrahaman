@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import TechBadge from "../atoms/TechBadge";
 import ProjectButton from "../atoms/ProjectButton";
+import Link from "next/link";
 
 interface ProjectCardProps {
   image: string;
@@ -18,37 +19,57 @@ export default function ProjectCard({
   technologies,
   link,
 }: ProjectCardProps) {
+  const visibleTechnologies = technologies.slice(0, 3);
+  const remainingTechnologiesCount = Math.max(technologies.length - 3, 0);
+
   return (
-    <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-900">
+    <Link
+      href={link}
+      className="group overflow-hidden rounded-xl border border-zinc-900"
+    >
       {/* Image */}
-      <div className="relative h-100 md:h-105 w-full overflow-hidden">
+      <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover transition duration-500 group-hover:scale-110"
+          unoptimized
+          sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+          className="object-cover group-hover:scale-105 transition duration-300"
         />
-      </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-t from-black via-black/50 to-transparent opacity-80" />
+        <div className="absolute bg-black/10 w-full h-full" />
+      </div>
 
       {/* Content */}
-      <div className="absolute bottom-0 left-0 z-10 w-full p-4">
-        <h3 className="text-xl font-bold text-white">{title}</h3>
+      <div className="space-y-4 p-3">
+        {/* Title */}
+        <div>
+          <h3 className="text-xl font-semibold text-white group-hover:text-red-700 transition duration-300">
+            {title}
+          </h3>
 
-        <p className="mt-2 text-sm text-white/90">{description}</p>
-
-        {/* Technologies */}
-        <div className="mt-3 flex items-center gap-2">
-          {technologies.map((tech) => (
-            <TechBadge key={tech} label={tech} />
-          ))}
+          <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-zinc-400">
+            {description}
+          </p>
         </div>
 
-        {/* Button */}
-        <ProjectButton href={link} />
+        <div className="flex items-center justify-between">
+          {/* Technologies */}
+              <div className="flex flex-wrap gap-2">
+            {visibleTechnologies.map((tech) => (
+              <TechBadge key={tech} label={tech} />
+            ))}
+            {remainingTechnologiesCount > 0 && (
+              <TechBadge label={`${remainingTechnologiesCount}+`} />
+            )}
+          </div>
+
+          <span className="text-red-500 group-hover:text-red-700 transition duration-300">
+            <i className="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
