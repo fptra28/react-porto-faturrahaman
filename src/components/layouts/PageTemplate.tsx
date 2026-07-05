@@ -8,9 +8,9 @@ interface PageTemplateProps {
 
 export default function PageTemplate({ children }: PageTemplateProps) {
   return (
-    <div className="font-sans bg-zinc-950">
+    <div className="font-sans min-h-screen flex flex-col">
       <Navbar />
-      {children}
+      <main className="flex-grow">{children}</main>
       <Footer />
       <ScrollToTopButton />
     </div>

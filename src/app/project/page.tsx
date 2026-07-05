@@ -15,7 +15,19 @@ export default async function ProjectPage() {
   return (
     <PageTemplate>
       <div className="mt-20 mb-10">
-        <ProjectHeroSection />
+        <ProjectHeroSection
+          badgeTitle="MY WORK"
+          title={
+            <>
+              <span className="text-red-500">P</span>roject
+            </>
+          }
+          description="A collection of projects I've built with passion, solving real problems with clean code and modern design."
+          imageSrc="/assets/ProjectHero.png"
+          imageAlt="Blog Illustration"
+          hideImageOnMobile
+        />
+
         {projects.length > 0 ? (
           <ProjectFilterSection projects={projects} />
         ) : (

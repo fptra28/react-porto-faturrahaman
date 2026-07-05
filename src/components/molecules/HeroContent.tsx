@@ -5,7 +5,7 @@ import HeroDescription from "../atoms/HeroDescription";
 
 export default function HeroContent() {
   return (
-    <div className="max-w-2xl space-y-3">
+    <div className="max-w-3xl space-y-3">
       <HeroBadge title="Hello, ✨ I'm" />
 
       <HeroTitle title="Muhammad" secondTitle="Faturrahman Putra" />

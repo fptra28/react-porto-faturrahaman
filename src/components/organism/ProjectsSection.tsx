@@ -7,7 +7,7 @@ export default async function ProjectsSection() {
   const topProjects = projects.slice(0, 4);
 
   return (
-    <section className="py-7 px-4 md:px-6 lg:px-12">
+    <section className="py-7 px-4 md:px-6 lg:px-12 bg-linear-to-b from-black to-transparent">
       <div className="mx-auto max-w-7xl">
         <SectionTitle title="What I've Built" />
 

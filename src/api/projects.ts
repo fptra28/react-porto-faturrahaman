@@ -20,9 +20,27 @@ export type ProjectViewModel = {
   link: string;
 };
 
-const PROJECT_API_URL = "http://backdoor-porto.test/api/senfuri0n/projects";
-const PROJECT_API_TOKEN = "280930Laufa-2026";
-const PROJECT_API_ORIGIN = "http://backdoor-porto.test";
+const PROJECT_API_URL = process.env.API_PORTO_URL ?? "";
+const PROJECT_API_TOKEN = process.env.API_PORTO_TOKEN ?? "";
+
+function resolveApiOrigin(): string {
+  if (process.env.API_PORTO_ORIGIN) {
+    return process.env.API_PORTO_ORIGIN;
+  }
+
+  if (!PROJECT_API_URL) {
+    return "";
+  }
+
+  try {
+    const { origin } = new URL(PROJECT_API_URL);
+    return origin;
+  } catch {
+    return "";
+  }
+}
+
+const PROJECT_API_ORIGIN = resolveApiOrigin();
 
 function parseTags(rawTags: string): string[] {
   try {
@@ -46,10 +64,16 @@ function toAbsoluteImageUrl(image: string): string {
 
 export async function getProjects(): Promise<ProjectViewModel[]> {
   try {
+    if (!PROJECT_API_URL) {
+      return [];
+    }
+
     const response = await fetch(PROJECT_API_URL, {
-      headers: {
-        Authorization: `Bearer ${PROJECT_API_TOKEN}`,
-      },
+      headers: PROJECT_API_TOKEN
+        ? {
+            Authorization: `Bearer ${PROJECT_API_TOKEN}`,
+          }
+        : undefined,
       cache: "no-store",
     });
 
